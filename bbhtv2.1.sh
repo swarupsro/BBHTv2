@@ -475,7 +475,7 @@ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf;
 gfp
 
 waf(){
-git clone https://github.com/EnableSecurity/wafw00f.git ~/tools/waff00f
+git clone https://github.com/EnableSecurity/wafw00f.git ~/tools/wafw00f
 cd ~/tools/wafw00f
 sudo python3 setup.py install
 }
@@ -521,12 +521,12 @@ echo ""
 echo "${GREEN} [+] Installing tomnomnom tools ${RESET}"
 echo "${GREEN} check out his other tools as well  ${RESET}"
 {
-go get -u github.com/tomnomnom/hacks/concurl
-go get -u github.com/tomnomnom/unfurl
-go get -u github.com/tomnomnom/hacks/anti-burl
-go get -u github.com/tomnomnom/hacks/filter-resolved
-go get -u github.com/tomnomnom/fff
-go get -u github.com/tomnomnom/qsreplace
+go install github.com/tomnomnom/hacks/concurl@latest
+go install github.com/tomnomnom/unfurl@latest
+go install github.com/tomnomnom/hacks/anti-burl@latest
+go install github.com/tomnomnom/hacks/filter-resolved@latest
+go install github.com/tomnomnom/fff@latest
+go install github.com/tomnomnom/qsreplace@latest
 } > /dev/null 2>&1
 echo "${BLUE} Done ${RESET}"
 echo ""
